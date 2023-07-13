@@ -1,0 +1,25 @@
+<h1>
+    Welcome to our latest component
+    {{ activePage }}
+</h1>
+
+<div class="container">
+    <!-- Property binding -->
+    <input type="text" [value]="username">
+    <p [style]="derivedStyles">This is a red text</p>
+    <img [src]="imageUrl" alt="">
+</div>
+
+<!-- Event Binding -->
+<div class="button-container">
+    <button (click)="refreshPage()">Click me</button>
+</div>
+
+<h1>Proving Something</h1>
+<div class="proof-of-concept">
+    <p>
+        <input [value]="proveText" class="text-section" (keyup)="updateText($event)" type="text"
+            placeholder="Enter text">
+    </p>
+    <span class="display-section">{{ proveText }}</span>
+</div>
