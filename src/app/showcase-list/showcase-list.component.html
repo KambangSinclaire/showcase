@@ -1,6 +1,6 @@
 <!-- ngIf Directive -->
-<h1>Showcase List - Structural Directives</h1>
-<div class="content-section" *ngIf="token.length > 1 ? true:false">
+<div class="content-section" *ngIf="showAboutShowCase">
+    <h1>About Showcase List</h1>
     <p>
         Lorem, ipsum dolor sit amet consectetur
         adipisicing elit. Unde sunt incidunt doloremque
@@ -10,6 +10,15 @@
 </div>
 
 <!-- ngFor Directive -->
-<div class="list-section">
-
+<div *ngIf="showShowCaseList" class="list-section">
+    <!-- List of Users -->
+    <h1>Showcase - User List</h1>
+    <div class="user-container">
+        <div class="user-item" *ngFor="let user of users">
+            <p>Username : {{ user.username}}</p>
+            <p>Age : {{ user.age}}</p>
+            <p>Gender : {{ user.gender}}</p>
+            <p>Profession : {{ user.proffesion}}</p>
+        </div>
+    </div>
 </div>

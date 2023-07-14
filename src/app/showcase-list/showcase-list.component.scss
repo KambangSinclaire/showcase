@@ -1,0 +1,12 @@
+.user-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+.user-item {
+    background-color: orange;
+}

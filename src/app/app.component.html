@@ -1,4 +1,4 @@
-<h1 class="title">
+<!-- <h1 class="title">
   {{ name }}
   <span>Age Pay {{ age * price > 1000 ? "Wow" : "hmm" }} </span>
   <span>the creators are {{ creators.name }}</span>
@@ -34,5 +34,18 @@
 </div>
 
 <app-home></app-home>
-
 <app-showcase></app-showcase>
+<app-profile></app-profile> 
+-->
+
+<section class="navabr-section">
+  <app-navbar (showAboutShowCase)="passToMain($event)"></app-navbar>
+</section>
+
+<section class="main-section">
+  <app-main [showAboutShowCase]="showValFromNavbar"></app-main>
+</section>
+
+<section class="footer-section">
+  <app-footer></app-footer>
+</section>

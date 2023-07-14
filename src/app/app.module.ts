@@ -7,13 +7,21 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { ShowcaseComponent } from './showcase/showcase.component';
 import { ShowcaseListComponent } from './showcase-list/showcase-list.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ShowcaseComponent,
-    ShowcaseListComponent
+    ShowcaseListComponent,
+    ProfileComponent,
+    NavbarComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

@@ -9,16 +9,9 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-  name: string = "Our Showcase App";
-  description: string = "The best Angular showcase software"
-  creators: any = { name: ['Mr Kambang', "Web Legends"] };
-  age = 40;
-  price = 300;
+  showValFromNavbar: boolean = false;
 
-  username: string = "";
-
-  sayHi() {
-    return "Hello " + this.name + " how are you?"
+  passToMain(event: any) {
+    this.showValFromNavbar = event;
   }
-
 }
